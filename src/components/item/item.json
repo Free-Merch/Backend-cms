@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_item_items",
+  "info": {
+    "displayName": "item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "shared": {
+      "type": "integer"
+    }
+  }
+}

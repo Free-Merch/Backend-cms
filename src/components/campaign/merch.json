@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_merch_merches",
+  "info": {
+    "displayName": "Campaign",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "displayName": "item",
+      "type": "component",
+      "repeatable": true,
+      "component": "item.item"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}
