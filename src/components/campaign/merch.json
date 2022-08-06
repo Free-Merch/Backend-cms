@@ -11,9 +11,6 @@
       "type": "component",
       "repeatable": true,
       "component": "item.item"
-    },
-    "active": {
-      "type": "boolean"
     }
   }
 }
