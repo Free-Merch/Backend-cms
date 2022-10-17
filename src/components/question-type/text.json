@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_question_type_texts",
+  "info": {
+    "displayName": "text",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "validation": {
+      "type": "string",
+      "required": true
+    },
+    "titleLink": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "index": {
+      "type": "integer",
+      "required": true
+    },
+    "required": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

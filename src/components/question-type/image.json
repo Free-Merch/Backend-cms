@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_question_type_images",
+  "info": {
+    "displayName": "Image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "samples": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "validation": {
+      "type": "string",
+      "required": true
+    },
+    "titleLink": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "index": {
+      "type": "integer",
+      "required": true
+    },
+    "required": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

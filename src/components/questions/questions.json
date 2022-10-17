@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_questions_questions",
+  "info": {
+    "displayName": "Questions",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question-type.text"
+    },
+    "radio": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question-type.radio"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question-type.image"
+    }
+  }
+}
