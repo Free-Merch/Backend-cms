@@ -16,8 +16,9 @@ const drive = google.drive({ version: "v3", auth });
 
 module.exports = {
   async index(ctx, next) {
+    console.log(ctx.origin);
     if(process.env.NODE_ENV !== "development" && 
-      (ctx.origin !== "https://freemerch.io" || ctx.origin !== "https://freemerch.vercel.app")){
+      (ctx.origin !== "https://freemerch.io/" || ctx.origin !== "https://freemerch.vercel.app/")){
       ctx.throw(401)
       return;
     }
@@ -56,10 +57,11 @@ module.exports = {
   },
 
   async upload(ctx, next) {
+    console.log(ctx.origin);
     if (
       process.env.NODE_ENV !== "development" &&
-      ( ctx.origin !== "https://freemerch.io" ||
-       ctx.origin !== "https://freemerch.vercel.app" )
+      ( ctx.origin !== "https://freemerch.io/" ||
+       ctx.origin !== "https://freemerch.vercel.app/" )
     ) {
       ctx.throw(401);
       return;

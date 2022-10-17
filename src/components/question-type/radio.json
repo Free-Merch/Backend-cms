@@ -34,7 +34,7 @@
     },
     "validation": {
       "type": "string",
-      "required": true
+      "required": false
     }
   }
 }
