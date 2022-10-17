@@ -17,11 +17,11 @@ const drive = google.drive({ version: "v3", auth });
 module.exports = {
   async index(ctx, next) {
     console.log(ctx.origin);
-    if(process.env.NODE_ENV !== "development" && 
-      (ctx.origin !== "https://freemerch.io/" || ctx.origin !== "https://freemerch.vercel.app/")){
-      ctx.throw(401)
-      return;
-    }
+    // if(process.env.NODE_ENV !== "development" && 
+    //   (ctx.origin !== "https://freemerch.io" || ctx.origin !== "https://freemerch.vercel.app")){
+    //   ctx.throw(401)
+    //   return;
+    // }
 
     
     const { id, title } = ctx.request.query;
@@ -57,15 +57,15 @@ module.exports = {
   },
 
   async upload(ctx, next) {
-    console.log(ctx.origin);
-    if (
-      process.env.NODE_ENV !== "development" &&
-      ( ctx.origin !== "https://freemerch.io/" ||
-       ctx.origin !== "https://freemerch.vercel.app/" )
-    ) {
-      ctx.throw(401);
-      return;
-    }
+    console.log(ctx.origin, ctx.request.origin, ctx.req?.origin);
+    // if (
+    //   process.env.NODE_ENV !== "development" &&
+    //   ( ctx.origin !== "https://freemerch.io" ||
+    //    ctx.origin !== "https://freemerch.vercel.app" )
+    // ) {
+    //   ctx.throw(401);
+    //   return;
+    // }
 
     const { id, name } = ctx.request.query;
 
