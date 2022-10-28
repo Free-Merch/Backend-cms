@@ -40,12 +40,12 @@ module.exports = {
       if(!sheet) throw(Error("Invalid sheet title"))
 
       await sheet.loadHeaderRow();
-      sheet.headerValues.forEach(header => {
-        if(!row[header]){
-          ctx.throw(400, "Missing "+header)
-          return
-        }
-      })
+      // sheet.headerValues.forEach(header => {
+      //   if(!row[header]){
+      //     ctx.throw(400, "Missing "+header)
+      //     return
+      //   }
+      // })
 
       await sheet.addRow(row);
       ctx.status = 200;
